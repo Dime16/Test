@@ -25,7 +25,6 @@ class SelectedCountry extends Component {
             const femaleData =  res[1].data.rank 
             const malePercent = (maleData / (maleData + femaleData) * 100).toFixed(2)
             const femalePercent = (femaleData / (maleData + femaleData) * 100).toFixed(2)
-            console.log(maleData, femaleData, malePercent, femalePercent) 
             this.setState({
                 maleData,
                 femaleData,

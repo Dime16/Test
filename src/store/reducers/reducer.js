@@ -44,7 +44,8 @@ const reducer = (state = INITIAL_STATE, action) => {
         case actionTypes.SET_RATIO_COUNTRY:
             return {
                 ...state,
-                ratioCountry: action.payload
+                ratioCountry: action.payload,
+                loading: false
             }
         default: 
             return state;

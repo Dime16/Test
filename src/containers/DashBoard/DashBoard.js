@@ -78,6 +78,7 @@ class DashBoard extends Component {
 
     // THIS IS THE HANDLER TO GET FEMALE TO MALE RATIO AND SORT IT.
     onRatioHandler = () => {
+        this.props.setCountriesInit()
         let obj = [];
         let arr = [];
         axios.all(this.props.promises.males)
@@ -135,7 +136,9 @@ class DashBoard extends Component {
 
 
         let pie = null;
-        if(this.props.ratioCountry) {
+        if(this.props.loading) {
+            pie = <Spinner />
+        }else if (this.props.ratioCountry) {
             const pieOptions = {
                 legend: {
                     display: true,
