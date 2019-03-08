@@ -1,0 +1,37 @@
+.container {
+    width: 100%;
+    margin-top: 10vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    &__bar {
+        width: 50%;
+    }
+
+    &__bot {
+        margin-top: 20px;
+
+        &__btn {
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: navy;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+            outline: none;
+            box-shadow: 2px 2px 20px #eee;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-position: right center;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__pie {
+        width: 50%;
+        height: 50vh;
+
+        & h3 {
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}

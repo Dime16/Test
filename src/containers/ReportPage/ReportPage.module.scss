@@ -1,0 +1,46 @@
+.container {
+    margin: auto;
+    margin-top: 8vh;
+    width: 80%;
+
+    &__form {
+        padding: 20px;
+
+
+        &__btn {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: navy;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+            outline: none;
+            box-shadow: 2px 2px 20px #eee;
+            border: none;
+
+            &:hover {
+                background-position: right center;
+            }
+
+        }
+
+        &__input {
+            width: 300px;
+            margin-right: 5px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            font-family: inherit;
+        }
+    }
+
+    &__header {
+        font-size: 24px;
+        padding: 20px 0px
+    }
+}
